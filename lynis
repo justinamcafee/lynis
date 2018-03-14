@@ -555,7 +555,7 @@ ${NORMAL}
         Display --indent 2 --text "- Detecting language and localization" --result "${LANGUAGE}" --color WHITE
         if [ ! -f ${DBDIR}/languages/${LANGUAGE} ]; then
             Display --indent 4 --text "${YELLOW}Notice:${NORMAL} no language file found for '${LANGUAGE}' (tried: ${DBDIR}/languages/${LANGUAGE})"
-            if IsDeveloperVersion; then Display --indent 4 --text "See https://github.com/CISOfy/lynis-sdk/documentation/10-translations.md for more details to help translating Lynis"; fi
+            if IsDeveloperVersion; then Display --indent 4 --text "See https://github.com/CISOfy/lynis-sdk/documentation/10-translations.md for more details to help translate Lynis"; fi
             sleep 5
         else
             LogText "Importing language file (${DBDIR}/languages/${LANGUAGE})"
